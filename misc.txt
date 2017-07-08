@@ -1,0 +1,20 @@
+# misc.txt
+# hints for things that aren't quite configured post boot
+
+# Need to break the default nameserver setup on OpenWRT (doesn't use the WAN DHCP'd nameservers):
+ln -fs /tmp/resolv.conf.auto /etc/resolv.conf
+
+# Add package feeds
+/etc/opkg/customfeeds.conf
+
+# (Considering hosting the necessary packages somewhere stable, TBD)
+
+# Edit the stock feeds and comment out feeds (these may break luci silently if left in)
+/etc/opkg/distfeeds.conf
+
+# Installing the web interfaces
+
+opkg update
+opkg install luci-ssl
+opkg install luci-app-sqm
+reboot
