@@ -22,7 +22,7 @@ More documentation on SQM/bufferbloat:
 
 [Introduction to bufferbloat](https://www.bufferbloat.net/projects/bloat/wiki/Introduction/)
 
-# LEDE + Cake SQM on the ESPRESSOBin switch SBC
+# Installation (pre-built releases)
 
 1. Grab the latest [release](https://github.com/davidk/espressobin-lede-sqm-cake/releases/tag/0.02).
 2. Locate files in the distribution (relevant ones are under bin/targets/mvebu64/generic) 
@@ -32,7 +32,7 @@ More documentation on SQM/bufferbloat:
 6. Configure [u-boot](http://wiki.espressobin.net/tiki-index.php?page=Boot+from+removable+storage+-+OpenWrt#Using_MicroSD_card) to boot from the SD card.
 7. Follow [misc.md](https://raw.githubusercontent.com/davidk/espressobin-lede-sqm-cake/master/misc.md) and [release notes](https://github.com/davidk/espressobin-lede-sqm-cake/releases/tag/0.02) to finish installation.
 
-# Rolling your own
+# Rolling your own release
 
 The builder is intended to be run on a cloud machine with bandwith/CPUs to aid in a reasonable build time. 
 
