@@ -6,9 +6,6 @@ mkdir -p /opt/kernel \
 [ -d "/opt/kernel/openwrt-kernel" ] || git clone https://github.com/MarvellEmbeddedProcessors/openwrt-kernel.git -b lede_17.02_release
 
 cd /opt/kernel/openwrt-kernel \
-&& git reset --hard HEAD \
-&& git config user.email "nobody@example.com" \
-&& git config user.name "nobody" \
 && mkdir -p /opt/openwrt \
 && cd /opt/openwrt/
 
