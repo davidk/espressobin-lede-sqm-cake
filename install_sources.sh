@@ -1,7 +1,8 @@
 #!/bin/bash
 
 mkdir -p /opt/kernel \
-&& cd /opt/kernel \
+&& cd /opt/kernel
+
 [ -d "/opt/kernel/openwrt-kernel" ] || git clone https://github.com/MarvellEmbeddedProcessors/openwrt-kernel.git -b lede_17.02_release
 
 cd /opt/kernel/openwrt-kernel \
