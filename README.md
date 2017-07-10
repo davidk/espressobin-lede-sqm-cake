@@ -1,3 +1,25 @@
+# What? Why? Where?
+
+This is a non-official LEDE distribution compiled for the ESPRESSOBin SBC to take advantage of LEDE+Cake SQM.
+
+The ESPRESSOBin is an SBC (Single Board Computer) with a solid featureset/design that makes it ideal as a tiny fileserver/router/switch.
+
+In this application the ESPRESSOBin sits at the network edge, ensuring that network devices pulling data in or pushing data out to the Internet do so without clogging buffers upstream of itself. 
+
+The net effect is that at high bandwidth usage latency remains mostly stable. 
+
+Cake is a modern queuing discipline that works well in most applications, available in the LEDE distribution that can be installed on the ESPRESSOBin for this use.
+
+More documentation on SQM/bufferbloat:
+
+[Using smart queue management in LEDE](https://lede-project.org/docs/howto/sqm)
+
+[Cake: the latest in sqm (QoS) schedulers](http://burntchrome.blogspot.com/2016/12/cake-latest-in-sqm-qos-schedulers.html) (2016)
+
+[How I Maximized the Speed of My Non-Gigabit Internet Connection](https://medium.com/speedtest-by-ookla/engineer-maximizes-internet-speed-story-c3ec0e86f37a) (Uses codel)
+
+[Introduction to bufferbloat](https://www.bufferbloat.net/projects/bloat/wiki/Introduction/)
+
 # LEDE + Cake SQM on the ESPRESSOBin switch SBC
 
 1. Grab the latest [release](https://github.com/davidk/espressobin-lede-sqm-cake/releases/tag/0.02).
