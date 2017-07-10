@@ -23,4 +23,4 @@ cd /opt/openwrt/openwrt-dd/ \
 
 # broken packages uninstalled above:
 # libevhtp - asks for github user/pass interactively (git)
-
+exit 0
