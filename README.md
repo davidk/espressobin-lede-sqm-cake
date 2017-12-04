@@ -24,7 +24,7 @@ More documentation on SQM/bufferbloat:
 
 # Installation (pre-built releases)
 
-1. Grab the latest [release](https://github.com/davidk/espressobin-lede-sqm-cake/releases/tag/0.02).
+1. Grab the latest [release](https://github.com/davidk/espressobin-lede-sqm-cake/releases).
 2. Locate files in the distribution (relevant ones are under bin/targets/mvebu64/generic) 
 3. Install it to your SD card with [standard instructions](http://wiki.espressobin.net/tiki-index.php?page=Boot+from+removable+storage+-+OpenWrt#Using_MicroSD_card).
 4. Insert into your board, power on with 12v and USB console attached
