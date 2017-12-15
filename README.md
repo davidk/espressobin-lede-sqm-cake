@@ -40,7 +40,9 @@ The gist is: Drop this on a VM with Debian Jessie and use `run.sh`. After everyt
 
 Add feeds/packages using `./scripts/feeds install $pkgname`. 
 
-Run `make menuconfig` to select how they should be built (`M` modules make .ipkgs). ***Important***: Select options as shown in: http://wiki.espressobin.net/tiki-index.php?page=Build+From+Source+-+OpenWrt (the adavanced options for the kernel tree can be entered up after checking the box with the spacebar).
+Run `make menuconfig` to select how they should be built (`M` modules make .ipkgs). 
+
+***Important***: Select options as shown in: http://wiki.espressobin.net/tiki-index.php?page=Build+From+Source+-+OpenWrt (the advanced options for the kernel tree can be entered up after checking the box with the spacebar).
 
 Save, then run `make -j$yourCoreCount`. Kernel options haven't been updated, so `make -j1 V=s1` and selecting defaults will be needed close to the end (stack a pile of coins on your enter key).
 
