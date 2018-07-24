@@ -38,12 +38,12 @@ The builder is intended to be run on a cloud machine with bandwith/CPUs to aid i
 
 The gist is: Drop this on a VM with Debian Jessie and use `run.sh`. After everything is cloned, pulled and built it should drop you into a shell as `openwrt`. 
 
-Add feeds/packages using `./scripts/feeds install $pkgname`. 
+Add feeds/a collection of packages using `./scripts/feeds install $pkgname`. List available feeds with `./scripts/feeds list`. Search with `./scripts/feeds search`. For more documentation on feeds, check out [OpenWRT's documentation](https://openwrt.org/docs/guide-developer/feeds).
 
-Run `make menuconfig` to select how they should be built (`M` modules make .ipkgs). 
+When ready, run `make menuconfig` to select build options ([space bar] to select; boxes marked `M` are turned into packages called `.ipkgs`).
 
-***Important***: Select options as shown in: http://wiki.espressobin.net/tiki-index.php?page=Build+From+Source+-+OpenWrt (the advanced options for the kernel tree can be entered up after checking the box with the spacebar).
+***Important***: Select options as shown in: http://wiki.espressobin.net/tiki-index.php?page=Build+From+Source+-+OpenWrt#Image_configuration (the advanced options for the kernel tree can be entered up after checking the box with the spacebar).
 
-Save, then run `make -j$yourCoreCount`. Kernel options haven't been updated, so `make -j1 V=s1` and selecting defaults will be needed close to the end (stack a pile of coins on your enter key).
+Save, then run `make -j$(($(nproc)+1))`. Kernel options haven't been updated, so `make -j1 V=s1` and selecting defaults may be needed close to the end (stack a pile of coins on your enter key).
 
 Once it finishes, everything that is supplied in the releases ends up in `bin/`.
