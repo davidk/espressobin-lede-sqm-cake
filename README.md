@@ -1,5 +1,7 @@
 # LEDE on ESPRESSOBin (with Cake SQM)
 
+This repository is being archived! [See here for more details on where to go and what to use](https://open.konspyre.org/post/2018-07-24-espressobin-moving-to-openwrt/) :tada:
+
 ### What? Why? Where?
 
 This is a non-official LEDE distribution compiled for the ESPRESSOBin SBC to take advantage of LEDE+Cake SQM.
